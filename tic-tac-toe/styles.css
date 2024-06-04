@@ -17,12 +17,15 @@ h1 {
 }
 
 .tic-tac-toe {
-  width: 370px;
-  margin: auto;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2em 0;
+width: 57%;
+display: grid;
+grid-template-columns: repeat(3, 120px);
+grid-template-rows: repeat(3, 120px);
+gap:5px;
+align-items: center;
+text-align: center;
+position:relative;
+left: 30%;
 }
 
 .square {
@@ -72,4 +75,10 @@ a {
 a:hover {
   background-color: blanchedalmond;
   opacity: 0.5;
+}
+
+
+.current-player-container {
+  align-items: center;
+  text-align: center;
 }
